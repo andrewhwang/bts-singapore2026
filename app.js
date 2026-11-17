@@ -2,8 +2,8 @@
 'use strict';
 const {sources,areas,venues,categories,events}=window.BTS_GUIDE;
 const $=id=>document.getElementById(id);
-let lang='ko';try{lang=localStorage.getItem('bts-lang')||((navigator.language||'').startsWith('ko')?'ko':'en');}catch{}
-if(!['ko','en'].includes(lang))lang='ko';
+const browserLang=(navigator.language||'').toLowerCase().split('-')[0]==='ko'?'ko':'en';
+let lang=browserLang;try{const savedLang=localStorage.getItem('bts-lang');if(['ko','en'].includes(savedLang))lang=savedLang;}catch{}
 let category='all', selected=null, map=null, layer=null, current=[];
 const translations={
  heroOne:['One city.','하나의 도시.'],heroSeven:['Seven stars.','일곱 개의 별.'],heroMemories:['Countless memories.','수많은 추억.'],
