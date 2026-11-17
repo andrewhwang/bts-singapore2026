@@ -4,7 +4,65 @@
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#faf8fd">
   <title>BTS in Singapore · ARIRANG City Guide</title>
-  <meta name="description" content="Explore BTS THE CITY ARIRANG Singapore events on an interactive map. English & Korean guide for December 2026.">
+  <meta name="description" content="Explore BTS THE CITY ARIRANG Singapore events on an interactive map. Drone shows, light displays, pop-ups and fan events — December 2026. English &amp; Korean guide by Andrew Hwang.">
+  <meta name="keywords" content="BTS Singapore, BTS THE CITY ARIRANG, BTS 싱가포르, 방탄소년단 싱가포르, ARIRANG Singapore, BTS December 2026, BTS event map, BTS schedule Singapore">
+  <meta name="author" content="Andrew Hwang">
+  <link rel="canonical" href="https://andrewhwang.github.io/bts-singapore2026/">
+
+  <!-- Open Graph / Facebook / KakaoTalk -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://andrewhwang.github.io/bts-singapore2026/">
+  <meta property="og:title" content="BTS in Singapore · ARIRANG City Guide">
+  <meta property="og:description" content="Drone shows, light displays, pop-ups and fan events across Singapore — December 2026. Interactive map guide in English &amp; Korean.">
+  <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/BTS_at_the_White_House_on_May_31%2C_2022_05.jpg/1200px-BTS_at_the_White_House_on_May_31%2C_2022_05.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="800">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:site_name" content="BTS Singapore ARIRANG City Guide">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://andrewhwang.github.io/bts-singapore2026/">
+  <meta name="twitter:title" content="BTS in Singapore · ARIRANG City Guide">
+  <meta name="twitter:description" content="Drone shows, light displays, pop-ups and fan events across Singapore — December 2026. Interactive map guide in English &amp; Korean.">
+  <meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/BTS_at_the_White_House_on_May_31%2C_2022_05.jpg/1200px-BTS_at_the_White_House_on_May_31%2C_2022_05.jpg">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "BTS in Singapore · ARIRANG City Guide",
+    "url": "https://andrewhwang.github.io/bts-singapore2026/",
+    "description": "Unofficial interactive map guide for BTS THE CITY ARIRANG Singapore events in December 2026.",
+    "inLanguage": ["ko", "en"],
+    "author": {
+      "@type": "Person",
+      "name": "Andrew Hwang"
+    },
+    "about": {
+      "@type": "Event",
+      "name": "BTS THE CITY ARIRANG Singapore",
+      "startDate": "2026-12-01",
+      "endDate": "2026-12-31",
+      "location": {
+        "@type": "Place",
+        "name": "Singapore",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "SG"
+        }
+      },
+      "organizer": {
+        "@type": "Organization",
+        "name": "HYBE"
+      },
+      "url": "https://andrewhwang.github.io/bts-singapore2026/"
+    }
+  }
+  </script>
+
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/leaflet/leaflet.css"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="light.css">
   <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-WHG6PXCM"></script>
@@ -17,7 +75,7 @@
 </head>
 <body>
   <a class="skip" href="#explore">지도로 이동 / Skip to map</a>
-  <header class="topbar"><a class="brand" href="#"><span class="brand-icon">Ⅱ</span><span>BTS <small>IN SINGAPORE</small></span></a><nav><a href="#explore" data-i="explore">행사 둘러보기</a><a href="#sources" data-i="sources">출처 & 안내</a><div class="languages" aria-label="Language"><button id="ko" aria-pressed="true">한국어</button><button id="en" aria-pressed="false">EN</button></div></nav></header>
+  <header class="topbar"><a class="brand" href="#"><span class="brand-icon">Ⅱ</span><span>BTS <small>IN SINGAPORE</small></span></a><nav><a href="#explore" data-i="explore">행사 둘러보기</a><a href="#sources" data-i="sources">출처 &amp; 안내</a><div class="languages" aria-label="Language"><button id="ko" aria-pressed="true">한국어</button><button id="en" aria-pressed="false">EN</button></div></nav></header>
   <main>
     <aside class="intro-disclaimer" aria-label="Disclaimer / 안내"><strong data-i="noticeTitle">비공식 행사 안내 사이트</strong><p data-i="noticeText">이 사이트는 BTS 싱가포르 행사를 쉽게 찾아보기 위해 만든 비공식 가이드입니다. BTS·HYBE·싱가포르 관광청의 공식 웹사이트가 아닙니다. 일정은 변경될 수 있으니 방문 전 원문과 공식 공지를 확인하세요.</p></aside>
     <section class="hero"><div class="hero-photo" role="img" aria-label="BTS, White House visit, 2022"></div><div class="hero-inner"><div class="eyebrow"><span class="live-dot"></span> THE CITY ARIRANG · SINGAPORE 2026</div><h1><span data-i="heroOne">One city.</span><br><span data-i="heroSeven">Seven stars.</span><br><em data-i="heroMemories">Countless memories.</em></h1><p data-i="intro">음악이 도시가 되는 12월. BTS와 함께하는 싱가포르의 모든 순간을 지도에서 만나보세요.</p><a class="primary" href="#explore"><span data-i="start">나의 ARIRANG 여정 시작하기</span> ↗</a><div class="hero-meta"><span>01 — 31 DEC 2026</span><span>SINGAPORE · SGT (UTC+8)</span></div></div><div class="photo-label">BTS · 2022 <span data-i="archive">아카이브 사진</span></div><div class="hero-stamp">SEOUL TO<br><strong>SINGAPORE</strong><br>WITH LOVE, BTS</div></section>
@@ -26,10 +84,9 @@
       <div class="workspace"><aside class="results"><div class="results-head"><strong id="count" aria-live="polite"></strong><span data-i="sgtime">싱가포르 현지 시간</span></div><div id="event-list"></div></aside><div class="map-wrap"><div id="map" aria-label="Singapore event map"></div><div id="map-error" hidden></div><button id="fit" class="fit" data-i="fit">⌖ 전체 장소 보기</button><div class="map-caption"><span class="live-dot"></span><span data-i="mapcaption">싱가포르에서 펼쳐지는 ARIRANG</span></div></div></div>
       <p class="schedule-note" data-i="note">일정 확인: 2026.11.17 · 1월까지 이어지는 행사 포함 · 핀은 행사장 대표 위치이며, 정확한 입구·이용 조건은 공식 공지를 확인하세요.</p>
     </section>
-    <section class="concert-strip"><span class="eyebrow">FOUR NIGHTS. ONE CONNECTION.</span><h2>BTS WORLD TOUR ‘ARIRANG’</h2><p>NATIONAL STADIUM · 17 / 19 / 20 / 22 DEC 2026</p><span data-i="soldout">공연 티켓 매진 · 공식 공지에서 입장 안내를 확인하세요.</span></section>
+    <section class="concert-strip"><span class="eyebrow">FOUR NIGHTS. ONE CONNECTION.</span><h2>BTS WORLD TOUR 'ARIRANG'</h2><p>NATIONAL STADIUM · 17 / 19 / 20 / 22 DEC 2026</p><span data-i="soldout">공연 티켓 매진 · 공식 공지에서 입장 안내를 확인하세요.</span></section>
     <section id="sources" class="sources"><div><div class="eyebrow">MADE FOR ARMY</div><h2 data-i="before">떠나기 전에 확인하세요</h2><p data-i="disclaimer">팬을 위해 만든 비공식 여행 가이드입니다. BTS·HYBE·관광청과 제휴하지 않습니다. 일정·시간·요금은 변경될 수 있으므로 방문 전 주최 측 공지를 확인하세요. 미발표 일정은 확정 일정과 구분해 표시합니다.</p></div><div class="source-links"><a id="article-link" target="_blank" rel="noopener noreferrer"><span data-i="article">The Straits Times 원문 기사</span> ↗</a><a href="https://weverse.io/bts/notice/40721" target="_blank" rel="noopener noreferrer">HYBE / Weverse ↗</a><a href="https://www.visitsingapore.com/travel-tips/travelling-to-singapore/seasonal-highlights/bts-the-city-arirang-singapore/" target="_blank" rel="noopener noreferrer">Visit Singapore ↗</a><a href="https://github.com/andrewhwang/bts-singapore2026" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></section>
   </main><footer><span>BTS IN SINGAPORE <small>· AN UNOFFICIAL CITY GUIDE</small></span><a href="https://commons.wikimedia.org/wiki/File:BTS_at_the_White_House_on_May_31,_2022_05.jpg" target="_blank" rel="noopener noreferrer" data-i="credit">배경 사진: The White House · 2022 · Public domain</a></footer>
   <dialog id="detail"><button class="close" id="close" aria-label="Close / 닫기">✕</button><div id="detail-content"></div></dialog>
   <noscript><p>JavaScript가 필요합니다. JavaScript is required for the interactive map. <a href="https://weverse.io/bts/notice/40721">Official schedule</a></p></noscript>
 </body></html>
-
